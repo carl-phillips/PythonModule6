@@ -1,4 +1,9 @@
-
+"""
+Carl Phillips, this function takes a message and multiplies it
+:param : message, the message you choose
+:param : n, the number of times to see the message
+:returns : the message multiplied
+"""
 def multiply_string(message, n):
     multiplied_message = ""
 
