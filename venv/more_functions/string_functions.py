@@ -1,6 +1,11 @@
 
 def multiply_string(message, n):
-    pass
+    multiplied_message = ""
+
+    for i in range(n):
+        multiplied_message += str(message)
+
+    return multiplied_message
 
 
 if __name__ == '__main__':
