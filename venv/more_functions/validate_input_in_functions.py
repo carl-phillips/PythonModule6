@@ -6,9 +6,15 @@ def score_input(test_name, test_score, invalid_message):
     :param invalid_message: optional, default value Invalid test score, try again!
     :return: returns the message of user information
     """
-    pass
+    if invalid_message == "":
+        invalid_message = "Invalid test score, try again!"
 
-    # return {"Test name: " + str(test_score)}
+    while test_name == "":
+        test_name = input("Enter your name: ")
+        if test_name == "":
+            return(invalid_message)
+
+    return "Test name: " + str(test_score)
 
 
 
@@ -17,4 +23,4 @@ if __name__ == '__main__':
     test_score = input("Enter your score: ")
     invalid_message = input("Enter invalid message: ")
 
-    score_input(test_name, test_score, invalid_message)
+    print(score_input(test_name, test_score, invalid_message))
